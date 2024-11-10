@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel website</title>
+    <!-- csss -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- nav bar -->
+    <nav class="navbar">
+        <h1 class="logo">World See</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#"></a>Home</li>
+            <li><a href="#"></a>Tours</li>
+            <li><a href="#"></a>Explore</li>
+            <li><a href="#"></a>About</li>
+            <li class="ctn"><a href="#"></a>Contact</li>
+
+        </ul>
+        <img src="./menuBtn.webp" alt="" class="menu-btn">
+    </nav>
+
+    <!-- header -->
+
+    <header>
+        <div class="header-content">
+            <h2>Explore The Colorful World</h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL GIFT</h1>
+            <a href="" class="ctn"> Learn More</a>
+        </div>
+    </header>
+
+    <!-- events -->
+
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <img src="./camp.jpg" alt="" height="300" width="450">
+                <h4>Everest Camp Trek</h4>
+                <p>Everest hiking is an adventurous and challenging journey, involving a climb to the world's highest
+                    peak. It requires courage, preparation, and endurance</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+
+            <div class="col">
+                <img src="./hut island.jpg" alt="" height="300" width="450">
+                <h4>Island Holidays</h4>
+                <p>Road walking is a simple and accessible activity that’s highly effective for improving health. It’s
+                    suitable for everyone and a great way to spend time in the fresh air.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="Tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>Upcoming Tours And Destination</h1>
+                <div class="line"></div>
+                <p>Upcoming tours and destinations promise exciting experiences, from scenic mountain treks to vibrant
+                    city explorations. Each destination offers unique cultures, cuisines, and attractions to discover.
+                    These trips are perfect opportunities for adventure, relaxation, and making lasting memories.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="./one.jpg" alt="">
+                    <img src="./two.jpg" alt="">
+                    <img src="./three.jpg" alt="">
+                    <img src="./four.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>Phone : 0331-1122333 | email : WorldSee@gmail.com</p>
+        <p>Copyright "©" 2024 Output World See</p>
+    </section>
+
+
+    <script>
+        const menubtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menubtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu')
+        })
+
+    </script>
+
+</body>
+
+</html>
